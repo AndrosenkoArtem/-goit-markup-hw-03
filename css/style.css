@@ -27,39 +27,41 @@
     button {
         cursor: pointer;
     }
-    .header-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 1630px;
+    .background-header {
+        background-color: var(--background-color);
+    }
+    .container {
+        width: 1200px;
         margin-left: auto;
         margin-right: auto;
         padding-left: 15px;
         padding-right: 15px;
-        background-color: var(--background-color);
+    }
+    .header-container {
+        display: flex;
+        align-items: center;
+        width: 1200px;
+        padding-left: 15px;
+        padding-right: 15px;
+        justify-content: space-between;
     }
     .width-main {
-        width: 1630px;
+        width: 1200px;
         margin: auto;
         padding-left: 15px;
         padding-right: 15px;
     }
     .button-padding {
         padding-top: 93px;
+        width: 1170px;
     }
     .width-footer {
-        width: 1630px;
+        width: 1170px;
         margin: auto;
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-top: 94px;
     }
     .footer-porfolio {
-        width: 1630px;
+        width: 1200px;
         margin: auto;
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-top: 94px;
     }
     .margin-recrut {
         padding-bottom: 94px;
@@ -111,9 +113,8 @@
         line-height: 1.2;
         letter-spacing: 0.03em;
         text-decoration: none;
-        margin: 24px 86px 25px 215px;
         padding-top: 24px;
-        padding-bottom: 25px;
+        padding-bottom:25px;
     }
     .logo-blue {
         color: var(--accent-color)
@@ -148,8 +149,6 @@
     }
     .mail-list {
         display: flex;
-        margin-left: 305px;
-        margin-right: 215px;
     }
     .items {
         margin-right: 10px;
@@ -253,7 +252,7 @@
         letter-spacing: 0.03em;
         margin: 0;
         padding: 0;
-        margin-bottom: 50px;
+        padding-bottom: 50px;
     }
     .activity {
         display: flex;
@@ -268,6 +267,10 @@
         text-transform: uppercase;
         margin: 0;
         padding: 0;
+    }
+    .backgroound-activity {
+        background: rgba(47, 48, 58, 0.8);
+
     }
     .activity .activity-img + .activity-img {
         margin-left: 30px;
@@ -334,6 +337,9 @@
     .button-flex {
         display: flex;
     }
+    .background-footer {
+        background: #2F303A;
+    }
     .email-footer-button {
         text-decoration: none;
         background-color: rgba(47, 48, 58, 1);
@@ -351,7 +357,6 @@
         margin-top: 20px;
     }
     .button-subscribe {
-        justify-content: start;
         color: var(--background-color);
         background-color: var(--accent-color);
         border:1px solid var(--accent-color);
@@ -374,7 +379,8 @@
     }
     .hero {
         text-align: center;
-        margin-bottom: 294px;
+        padding-top: 200px;
+        padding-bottom: 200px;
     }
     .hero-title {
         color: var(--background-color);
@@ -386,9 +392,6 @@
         text-transform: uppercase;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 200px;
-        margin-bottom: 30;
-
     }
     .mail-footer {
         display: block;
@@ -417,6 +420,10 @@
     .tel-footer:focus {
         color: var(--title-text-color);
     }
+    .join-container {
+        padding-top: 72px;
+        padding-bottom: 100px;
+    }
     .biography {
         color: var(--background-color);
         font-style: normal;
@@ -431,8 +438,9 @@
         width: 231px;
         
     }
-    .join-container {
-        margin: 72px 94px 100px 69px ;
+    .subscribe-conteiner {
+        padding-top: 72px;
+        padding-bottom: 94px;
     }
     .join-and-subscribe {
         color: var(--background-color);
@@ -444,8 +452,12 @@
     .footer-flex {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         background-color: #2F303A;
+        width: 1170px;
+    }
+    .adress-footer {
+        padding: 60px 0px;
     }
     .adress-footer .logo-footer {
         font-family: 'Raleway';
@@ -455,9 +467,6 @@
         font-size: 26px;
         line-height: 1.2px;
         letter-spacing: 0.03em;
-    }
-    .adress-footer {
-        margin: 60px 69px 60px 214px;
     }
     .logo-white {
         color: var(--accent-color);
@@ -469,12 +478,9 @@
     .adress-footer .logo-footer:focus {
         color: var(--accent-color)
     }
-    .subscribe-conteiner {
-        margin: 72px 216px 94px 94px;
-    }
+
 
     /* Portfolio css */
-
     .filter {
         display: flex;
         justify-content: center;
@@ -532,30 +538,33 @@
         display: flex;
         flex-wrap: wrap;
         text-align:center;
-        width: 1200px;
+        width: 1170px;
         margin-left: auto;
         margin-right: auto;
         justify-content: center;
+        padding-bottom: 94px;
     }
     .catalog 
     .catalog-title {
         color: var(--primary-text-color);
         font-size: 18px;
+        margin: 0;
         line-height: 2;
         letter-spacing: 0.06em;
-        margin-top: 20px;
-        margin-left: 24px;
-        margin-bottom: 4px;
+        padding-top: 20px;
+        padding-left: 24px;
+        padding-bottom: 4px;
         display: flex
     }
     .catalog 
     .catalog-subtitle {
         color: var(--title-text-color);
         font-size: 16px;
+        margin: 0;
         line-height: 1.9;
         letter-spacing: 0.03em;
-        margin-left: 24px;
-        margin-bottom: 20px;
+        padding-left: 24px;
+        padding-bottom: 20px;
         display: flex
     }
     .catalog 
